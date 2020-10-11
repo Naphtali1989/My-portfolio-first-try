@@ -42,7 +42,7 @@ function renderPortModal(id) {
                                 <p>${item.fullDesc}</p>
                                 <ul class="list-inline">
                                     <li>Date: september 2020</li>
-                                    <li>link: ${item.url}</li>
+                                    <li>link: <a href="${item.url}">${item.name}</a></li>
                                     <li>Category: ${item.category}</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">

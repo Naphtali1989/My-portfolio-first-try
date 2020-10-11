@@ -103,7 +103,7 @@ body {
 
 .btn-primary {
     height: 55px;
-    width: 120px;
+    width: 175px;
     background: #e73d1e;
     border-radius: 4px;
     margin-left: 10px;
@@ -156,7 +156,7 @@ body {
         margin-right: 30vw;
     }
     .offcanvas-aside {
-        width: 30vw;
+        width: 60vw;
         right: -30vw;
     }
 }
@@ -294,6 +294,9 @@ header.masthead .intro-text .intro-heading {
         margin-bottom: 50px;
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
+    }
+    .offcanvas-aside {
+        width: 40vw;
     }
 }
 
@@ -638,6 +641,9 @@ header.masthead .intro-text .intro-heading {
 }
 
 @media (min-width: 1200px) {
+    .offcanvas-aside {
+        width: 30vw;
+    }
     .timeline>li {
         min-height: 170px;
     }
