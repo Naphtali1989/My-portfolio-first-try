@@ -23,7 +23,7 @@ var gPortItems = [{
         url: 'projs/icon-shop',
         publishedAt: 1448693940000,
         fullDesc: `This is an Icon Shop simulator, 
-                    I played with the possibilities of cutting out icons from s Sprite image and added some functinoality.
+                    I played with the possibilities of cutting out icons from a Sprite image and added some functinoality.
                     `,
     }, {
         id: 'safe-content',
