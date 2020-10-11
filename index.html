@@ -25,7 +25,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="initPortPage()">
     <div class="offcanvas-btn" onClick="openCanvas()">
         <i class="fa fa-comment" aria-hidden="true"></i>
     </div>
@@ -217,31 +217,37 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
+                    <img class="mx-auto rounded-circle" src="img/mypic/profile.jpg" alt="">
                     <h4>Naphtali Rubin</h4>
                     <p class="text-muted">Junior Full-Stack Programmer</p>
                     <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
+                        <!-- <li class="list-inline-item">
                             <a href="#">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="https://www.facebook.com/naphtali.rubin">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/naphtali-rubin-3851b0117/">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-8 flex-align-center">
-                <p class="large text-muted  about-description"> ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis,
-                    quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <div class="col-sm-8 flex-align-center flex-column">
+                <p class="large text-muted about-description"> Hi! I am Naphtali.
+                </p>
+                <p class="large text-muted about-description">
+                    I'm a programmer in training who wishes to be the very best! Currently working on my studies with the Coding Academy course, but i have dabbled in various courses in the past.
+                </p>
+                <p class="large text-muted about-description">
+                    I really love gaming and geeky stuff, especially fantasy and science fiction. I love reading books, watching movies, binging TV shows and more!
+                </p>
             </div>
         </div>
     </section>
@@ -494,6 +500,8 @@
     <!-- Custom scripts for this template -->
     <script src="js/ca-gallery.js"></script>
     <script src="js/offCanvas.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/portfolio-service.js"></script>
     <script src="js/main.js"></script>
 
 
