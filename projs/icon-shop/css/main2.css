@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: center url(../imgs/horde.jpg) no-repeat;
+    height: 100vh;
+    color: rgb(6, 54, 38);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+    width: 1em;
+}
+
+.container::-webkit-scrollbar-track {
+    box-shadow: inset 2px 4px 6px rgba(34, 32, 32, 0.3);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: crimson;
+    outline: 1px solid darkblue;
+}
+
+.foot-container {
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.coins {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    box-shadow: -14px -4px 60px 3px rgba(0, 0, 0, 0.75);
+    position: relative;
+    margin: 100px auto;
+    padding: 10px;
+    width: 720px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.table-face {
+    position: absolute;
+    box-shadow: 13px 4px 25px black, 13px 4px 25px black inset;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+button {
+    background-color: #221F3B;
+    outline: none;
+    color: rgb(101, 200, 101);
+    font-size: large;
+    height: 25px;
+    width: 25px;
+    margin: 0 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.zero {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    font-size: x-small;
+    bottom: 5px;
+    right: 125px;
+}
+
+.name {
+    position: fixed;
+    padding: 0 10px;
+    width: 210px;
+}
+
+.name span {
+    display: inline-block;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    opacity: 0.45;
+}
+
+.alliance {
+    color: blue;
+}
+
+.horde {
+    color: red;
+}
+
+.cell {
+    position: relative;
+    font-size: larger;
+    padding: 32px 15px;
+}
+
+.check {
+    background-image: url(../imgs/likedlike.jpg);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.checkbox {
+    background-position: 86px -55px;
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+}
+
+.table-head {
+    height: 45px;
+    text-align: left;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 35px;
+}
+
+.row:not(:last-child) {
+    border-bottom: 2px crimson solid;
+}
+
+.power {
+    width: 225px;
+    margin-left: 25px;
+}
+
+.price {
+    color: darkgoldenrod;
+    width: 100px;
+}
+
+.liked {
+    background-position: -35px -47px;
+}
+
+.animated {
+    animation: 0.2s rotate-anime infinite linear;
+}

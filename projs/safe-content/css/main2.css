@@ -1,0 +1,132 @@
+@font-face {
+    font-family: spacey;
+    src: url(../fonts/SpaceMono-BoldItalic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../imgs/trekybcg.jpg') center no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    font-family: spacey, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    background-color: #8191be6c;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.avatar {
+    height: 100%;
+    border-radius: 50%;
+    width: 170px;
+}
+
+.inner-avatar .avatar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img {
+    width: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pressed {
+    box-shadow: inset 20px 400px 5px #e5e5e5;
+}
+
+.btn-group button {
+    background-color: #597de2;
+    display: flex;
+    float: left;
+    border: 1px solid #ccc;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group button:hover {
+    background-color: #4d9cca;
+}
+
+.secret-for-admins,
+.current-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+.card-content {
+    position: relative;
+}
+
+.the-sorter {
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.cell {
+    padding: 25px;
+    border: 2px solid black;
+}
+
+.card {
+    background-color: rgba(0, 255, 128, 0.24);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 12px;
+    border-radius: 50%;
+}
+
+.current-card {
+    position: absolute;
+    transform: scale(0);
+    background-color: tan;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    transition: 0.3s;
+}
+
+.show {
+    transform: scale(1);
+}

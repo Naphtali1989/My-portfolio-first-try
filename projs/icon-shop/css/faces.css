@@ -1,0 +1,281 @@
+.inner-cell {
+    background-image: url(../imgs/wow-races.png);
+    width: 64px;
+    height: 62px;
+}
+
+.blood-elf-female {
+    background-position: -6px -6px;
+    width: 64px;
+    height: 62px;
+}
+
+.dark-iron-dwarf-female {
+    background-position: -77px -6px;
+    width: 64px;
+    height: 62px;
+}
+
+.dreanei-female {
+    background-position: -148px -6px;
+    width: 64px;
+    height: 62px;
+}
+
+.dwarf-female {
+    background-position: -219px -6px;
+    width: 64px;
+    height: 62px;
+}
+
+.gnome-female {
+    background-position: -290px -6px;
+    width: 64px;
+    height: 62px;
+}
+
+.goblin-female {
+    background-position: -361px -6px;
+    width: 64px;
+    height: 62px;
+}
+
+.highmountain-tauren-female {
+    background-position: -6px -74px;
+    width: 64px;
+    height: 62px;
+}
+
+.human-female {
+    background-position: -77px -74px;
+    width: 64px;
+    height: 62px;
+}
+
+.kul-tiran-female {
+    background-position: -148px -74px;
+    width: 64px;
+    height: 62px;
+}
+
+.lightforged-dreanei-female {
+    background-position: -219px -74px;
+    width: 64px;
+    height: 62px;
+}
+
+.maghar-orc-female {
+    background-position: -290px -74px;
+    width: 64px;
+    height: 62px;
+}
+
+.mecha-gnome-female {
+    background-position: -361px -74px;
+    width: 64px;
+    height: 62px;
+}
+
+.nightborn-female {
+    background-position: -6px -144px;
+    width: 64px;
+    height: 62px;
+}
+
+.night-elf-female {
+    background-position: -77px -144px;
+    width: 64px;
+    height: 62px;
+}
+
+.orc-female {
+    background-position: -148px -144px;
+    width: 64px;
+    height: 62px;
+}
+
+.panda-female {
+    background-position: -219px -144px;
+    width: 64px;
+    height: 62px;
+}
+
+.tauren-female {
+    background-position: -290px -144px;
+    width: 64px;
+    height: 62px;
+}
+
+.troll-female {
+    background-position: -361px -144px;
+    width: 64px;
+    height: 62px;
+}
+
+.undead-female {
+    background-position: -6px -213px;
+    width: 64px;
+    height: 62px;
+}
+
+.void-elf-female {
+    background-position: -77px -213px;
+    width: 64px;
+    height: 62px;
+}
+
+.vulpera-female {
+    background-position: -148px -213px;
+    width: 64px;
+    height: 62px;
+}
+
+.worgen-female {
+    background-position: -219px -213px;
+    width: 64px;
+    height: 62px;
+}
+
+.zandalary-troll-female {
+    background-position: -290px -213px;
+    width: 64px;
+    height: 62px;
+}
+
+.blood-elf-male {
+    background-position: -361px -213px;
+    width: 64px;
+    height: 62px;
+}
+
+.dark-iron-dwarf-male {
+    background-position: -6px -282px;
+    width: 64px;
+    height: 62px;
+}
+
+.dreanei-male {
+    background-position: -77px -282px;
+    width: 64px;
+    height: 62px;
+}
+
+.dwarf-male {
+    background-position: -148px -282px;
+    width: 64px;
+    height: 62px;
+}
+
+.gnome-male {
+    background-position: -219px -282px;
+    width: 64px;
+    height: 62px;
+}
+
+.goblin-male {
+    background-position: -290px -282px;
+    width: 64px;
+    height: 62px;
+}
+
+.highmountain-tauren-male {
+    background-position: -361px -282px;
+    width: 64px;
+    height: 62px;
+}
+
+.human-male {
+    background-position: -6px -351px;
+    width: 64px;
+    height: 62px;
+}
+
+.kul-tiran-male {
+    background-position: -77px -351px;
+    width: 64px;
+    height: 62px;
+}
+
+.lightforged-dreanei-male {
+    background-position: -148px -351px;
+    width: 64px;
+    height: 62px;
+}
+
+.maghar-orc-male {
+    background-position: -219px -351px;
+    width: 64px;
+    height: 62px;
+}
+
+.mecha-gnome-male {
+    background-position: -290px -351px;
+    width: 64px;
+    height: 62px;
+}
+
+.nightborn-male {
+    background-position: -361px -351px;
+    width: 64px;
+    height: 62px;
+}
+
+.night-elf-male {
+    background-position: -6px -420px;
+    width: 64px;
+    height: 62px;
+}
+
+.orc-male {
+    background-position: -77px -420px;
+    width: 64px;
+    height: 62px;
+}
+
+.panda-male {
+    background-position: -148px -420px;
+    width: 64px;
+    height: 62px;
+}
+
+.tauren-male {
+    background-position: -219px -420px;
+    width: 64px;
+    height: 62px;
+}
+
+.troll-male {
+    background-position: -290px -420px;
+    width: 64px;
+    height: 62px;
+}
+
+.undead-male {
+    background-position: -361px -420px;
+    width: 64px;
+    height: 62px;
+}
+
+.void-elf-male {
+    background-position: -6px -489px;
+    width: 64px;
+    height: 62px;
+}
+
+.vulpera-male {
+    background-position: -77px -489px;
+    width: 64px;
+    height: 62px;
+}
+
+.worgen-male {
+    background-position: -148px -489px;
+    width: 64px;
+    height: 62px;
+}
+
+.zandalary-troll-male {
+    background-position: -219px -489px;
+    width: 64px;
+    height: 62px;
+}

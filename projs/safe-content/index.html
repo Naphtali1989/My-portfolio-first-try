@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noobie's Secret Page</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()" onkeyup="onDoLogin(event)">
+    <div class="the-whole-page">
+
+        <div class="secret hide">
+        </div>
+
+        <div class="container">
+            <div class="login-screen">
+                <input class="user-name-txt" type="text" placeholder="User Name" value="Captain Jean Luc Picard" />
+                <input class="password-num" type="password" placeholder="Password" value="123" />
+                <input type="checkbox" onclick="togglePwdVisibility()">Show Password
+                <button class="btn loginBtn" onclick="onDoLogin()">Log-in</button>
+            </div>
+        </div>
+
+        <img src="imgs/" alt="">
+        <a href="secret-page.html" class="secret-page-link"></a>
+    </div>
+
+    <script src="js/services/storage-services.js"></script>
+    <script src="js/services/user-services.js"></script>
+    <script src="js/services/util-services.js"></script>
+    <script src="js/page-controller.js"></script>
+
+</body>
+
+</html>

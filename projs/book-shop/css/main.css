@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.02em;
+    font-weight: bold;
+}
+
+body {
+    background: url(../imgs/libbcg.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    padding-left: 15px;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    background-color: rgba(160, 106, 211, 0.534);
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(76, 123, 177, 0.897);
+}
+
+.curr-page-num {
+    padding: 20px;
+    background-color: rgba(160, 106, 211, 0.596);
+    font-size: 2em;
+}
+
+.arrow-icon {
+    width: 25px;
+    height: 25px;
+    transform: scale(0);
+    transition: 0.35s;
+}
+
+.shop {
+    background-color: rgba(219, 200, 176, 0.541);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 120px;
+    height: 700px;
+    width: 900px;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.hidden-details {
+    background-color: rgb(242, 251, 162);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 550px;
+    transform: scale(0);
+    transition: 0.35s;
+}
+
+.book-adder {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.book-table {
+    background-color: rgba(138, 138, 207, 0.726);
+    padding: 5px 25px;
+    text-align: center;
+}
+
+.header-row {
+    background-color: rgba(94, 224, 94, 0.472);
+}
+
+.header-cell {
+    padding: 12px 35px;
+}
+
+.book-cell {
+    padding: 5px 25px;
+}
+
+.navigator {
+    display: flex;
+    align-self: flex-end;
+}
+
+.show {
+    transform: scale(1);
+}
+
+.top-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden-details button {
+    margin: 15px;
+    width: 42px;
+    height: 42px;
+}
+
+.close-modal {
+    align-self: flex-start;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 5;
+}
+
+.rating-details {
+    display: flex;
+}
+
+.book-icon {
+    height: 180px;
+    width: 105px;
+}
+
+.read-btn {
+    background-color: rgba(49, 172, 44, 0.52);
+}
+
+.update-btn {
+    background-color: rgba(235, 245, 40, 0.52);
+}
+
+.delete-btn {
+    background-color: rgba(149, 8, 8, 0.52);
+}

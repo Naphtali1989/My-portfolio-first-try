@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naphtali's Mine Sweeper!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="initGame()">
+
+    <div>
+        <div class="left-side">
+
+            <div class="flags-left">
+                <h4>Flags left: <span></span></h4>
+            </div>
+
+            <div class="lives">
+                <h4>Lives:</h4>
+                <span></span>
+            </div>
+
+            <button class="safe-click" onclick="randomizeSafeBlock()">
+                Safe-Click available: <span></span>
+            </button>
+
+        </div>
+
+        <button class="reset-game" onclick="initGame()"></button>
+
+        <div class="right-side">
+
+            <div class="timer">
+                <h4>
+                    Timer: <span></span>
+                </h4>
+            </div>
+
+            <div class="hints" onclick="manageHint()">
+                <h4>Hints:</h4>
+                <span></span>
+            </div>
+
+            <button class="undo" onclick="undo()">Undo</button>
+        </div>
+
+    </div>
+
+    <div>
+
+        <table class="game-table">
+            <tbody class="mine-field" oncontextmenu="return false;"></tbody>
+        </table>
+
+    </div>
+
+    <div>
+        <button onclick="toggleManualMode()" class="manual-position">Toggle manual mode</button>
+
+        <div class="difficulties">
+            <button onclick="changeDiff(4, 2)" class="easy-button">Easy</button>
+            <button onclick="changeDiff(8, 12)" class="normal-button">Normal</button>
+            <button onclick="changeDiff(12, 30)" class="heroic-button">Heroic</button>
+        </div>
+
+        <div class="modal">
+            <p>You have <span></span> mines left to place!</p>
+        </div>
+
+        <div class="high-scores-div">
+            <h1>High Scores</h1>
+            <table class="high-scores-table">
+                <tbody class="high-scores"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/renders.js"></script>
+    <script src="js/util.js"></script>
+
+</body>
+
+</html>

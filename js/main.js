@@ -11,7 +11,7 @@ function renderPortItem() {
     var currCount = 0;
     var strHTML = items.map(function(item) {
         return `<div class="col-md-4 col-sm-6 portfolio-item item${++currCount}">
-                    <a class="portfolio-link" data-toggle="modal" onclick="renderPortModal('${currCount}')" href="#portfolioModal">
+                    <a class="portfolio-link" data-toggle="modal" onclick="renderPortModal('${currCount}', '${item.id}')" href="#portfolioModal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -29,21 +29,21 @@ function renderPortItem() {
     elPortItems.innerHTML = strHTML.join('');
 }
 
-function renderPortModal(num) {
+function renderPortModal(num, id) {
+    var item = getPortItemById(id);
     var strHTML = `
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
                             <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <h2>${item.title}</h2>
+                                <p class="item-intro text-muted">${item.desc}</p>
                                 <img class="img-fluid d-block mx-auto" src="img/portfolio/0${num}-full.jpg" alt="">
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
                                 maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Threads</li>
-                                    <li>Category: Illustration</li>
+                                    <li>Date: september 2020</li>
+                                    <li>Category: ${item.category}</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
@@ -55,4 +55,33 @@ function renderPortModal(num) {
     var elModal = document.querySelector('.modal-container');
     console.log('elmodal is:', elModal)
     elModal.innerHTML = strHTML;
+}
+
+function renderContactModal() {
+    var strHTML = `<form>
+                    <div class="form-group">
+                    <label for="userEmail">Email address</label>
+                    <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+                    </div>
+                    
+                    <div class="form-group"> 
+                    <label for="subejctText">Subject:</label>
+                    <textarea class="form-control subject" id="subejctText" rows="1"></textarea>
+                    <label for="bodyText">What would you like to tall me?</label>
+                    <textarea class="form-control body" id="bodyText" rows="10"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="openContactMail()">Submit</button>
+
+                </form>`
+    var elContactModal = document.querySelector('#contact');
+    console.log('the el contact modal', elContactModal)
+    elContactModal.innerHTML = strHTML;
+    openCanvas();
+}
+
+function openContactMail() {
+    var elSubject = document.querySelector('.subject')
+    var elBody = document.querySelector('.body')
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=naphtali.r.89@gmail.com&su=${elSubject.value}&body=${elBody.value}`);
 }

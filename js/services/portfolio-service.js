@@ -1,61 +1,69 @@
 'use strict';
 
 var gPortItems = [{
-        id: "minesweeper",
-        name: "minesweeper",
-        title: "My Mine-sweeper",
-        desc: "My first fully functional web page based game.",
-        url: "projs/minesweeper",
+        id: 'minesweeper',
+        name: 'minesweeper',
+        title: 'My Minesweeper',
+        desc: 'My first fully functional web page based game.',
+        category: 'Games',
+        url: 'projs/minesweeper',
         publishedAt: 1448693940000,
-        labels: ["Matrixes", "keyboard events"],
+        fullDesc: `This is my Minesweeper project, 
+                    I have made it in accordance to the specifications requested by the Coding Academy group.
+                    `,
     },
     {
-        id: "bookshop",
-        name: "bookshop",
-        title: "My Bookshop",
-        desc: "A book table for a bookshop web page.",
-        url: "projs/bookshop",
+        id: 'icon-shop',
+        name: 'icon-shop',
+        title: 'My icon-shop',
+        desc: 'A fictional icons shop.',
+        category: 'Web pages',
+        url: 'projs/icon-shop',
         publishedAt: 1448693940000,
-        labels: ["Matrixes", "keyboard events"],
     }, {
-        id: "minesweeper",
-        name: "minesweeper",
-        title: "My Mine-sweeper",
-        desc: "My first fully functional web page based game.",
-        url: "projs/minesweeper",
+        id: 'safe-content',
+        name: 'safe-content',
+        title: 'My safe-content',
+        desc: 'A web page log-in and admin content.',
+        category: 'Web pages',
+        url: 'projs/safe-content',
         publishedAt: 1448693940000,
-        labels: ["Matrixes", "keyboard events"],
     },
     {
-        id: "bookshop",
-        name: "bookshop",
-        title: "My Bookshop",
-        desc: "A book table for a bookshop web page.",
-        url: "projs/bookshop",
+        id: 'book-shop',
+        name: 'book-shop',
+        title: 'My Bookshop',
+        desc: 'A rendered table for a bookshop web page.',
+        category: 'Web pages',
+        url: 'projs/book-shop',
         publishedAt: 1448693940000,
-        labels: ["Matrixes", "keyboard events"],
     }, {
-        id: "minesweeper",
-        name: "minesweeper",
-        title: "My Mine-sweeper",
-        desc: "My first fully functional web page based game.",
-        url: "projs/minesweeper",
+        id: 'todos',
+        name: 'todos',
+        title: 'My to-do list',
+        desc: 'A web page with a simple to-do list.',
+        category: 'Web pages',
+        url: 'projs/todos',
         publishedAt: 1448693940000,
-        labels: ["Matrixes", "keyboard events"],
     },
     {
-        id: "bookshop",
-        name: "bookshop",
-        title: "My Bookshop",
-        desc: "A book table for a bookshop web page.",
-        url: "projs/bookshop",
+        id: 'touch-nums',
+        name: 'touch-nums',
+        title: 'My touch-nums game',
+        desc: 'A simple web page based game of numbers.',
+        category: 'Games',
+        url: 'projs/touch-nums',
         publishedAt: 1448693940000,
-        labels: ["Matrixes", "keyboard events"],
     }
-
 ];
-var gModals;
+
 
 function getPortItems() {
     return gPortItems;
+}
+
+function getPortItemById(itemId) {
+    return gPortItems.find(function(item) {
+        return itemId === item.id;
+    });
 }

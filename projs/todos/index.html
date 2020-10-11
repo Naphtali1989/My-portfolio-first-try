@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naphtali's To-do's</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <h1>To-Do's</h1>
+
+    <section class="filter-container">
+        <h2>Filter</h2>
+        <select onchange="onSetFilter(this.value)">
+            <option value="ALL">All</option>
+            <option value="ACTIVE">Active</option>
+            <option value="DONE">Done</option>
+        </select>
+
+        <select onchange="onSetSort(this.value)">
+            <option value="none">None</option>
+            <option value="txt">Name</option>
+            <option value="created">Time Created</option>
+            <option value="prio">Priority</option>
+        </select>
+
+    </section>
+
+    <ul class="todo-list">
+    </ul>
+
+    <input class="new-todo-txt" type="text" placeholder="What todo?" />
+    <input class="prio-num" type="text" placeholder="Importance" />
+    <button class="btn" onclick="onAddTodo()">Add</button>
+
+    <section class="todo-stat">
+        Total todos:
+        <span class="total"></span> Active:
+        <span class="active"></span>
+    </section>
+
+
+    <footer>
+        cofferights 2020
+    </footer>
+
+    <script src="js/services/util-service.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/todo-service.js"></script>
+    <script src="js/todo-controller.js"></script>
+</body>
+
+</html>

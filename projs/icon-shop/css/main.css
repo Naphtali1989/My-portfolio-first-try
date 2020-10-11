@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    height: 800px;
+    width: 700px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.container:not(:first-child),
+ :not(:last-child) {
+    height: 70%;
+}
+
+.header {
+    background-color: lightblue;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.side-bar {
+    background-color: yellow;
+    float: left;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    background-color: lightsalmon;
+    float: right;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: sandybrown;
+    clear: both;
+    height: 100px;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: lightskyblue;
+}
+
+h1,
+.difficulties {
+    text-align: center;
+}
+
+.timer {
+    /* position: absolute;
+    right: 750px; */
+    color: crimson;
+}
+
+.board-bcg {
+    margin: auto;
+}
+
+.clicked {
+    background-color: rgb(236, 13, 13);
+}
+
+.game-board td {
+    /* background-color: rgb(97, 138, 204); */
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transition: .5s;
+}
+
+.game-board td:hover {
+    background-color: tan;
+    cursor: pointer;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Naphtali's Touch Nums!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onkeyup="handleKey(event)" onload="init()">
+    <h1>The game of nums!</h1>
+
+    <div class="difficulties">
+        <h1 class="header">The difficulty is on <span class="difficulty">Easy</span> currently</h1>
+
+        <button class="game-reset" onclick="resetBoard(this)">Reset Game</button>
+        <button class="difficulty" onclick="changeDifficulty()">Change Difficulty</button>
+        <p class="timer">Timer: 0</p>
+    </div>
+    <div>
+        <table border=1 cellpadding="10" class="board-bcg">
+            <tbody class="game-board">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+
+</body>
+
+
+</html>

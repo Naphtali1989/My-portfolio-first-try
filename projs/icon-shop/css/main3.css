@@ -1,0 +1,19 @@
+body {
+    background-color: blanchedalmond;
+    height: 100vh;
+}
+
+.container {
+    background-color: burlywood;
+    margin: 50px auto;
+    columns: 4;
+    column-gap: 20px;
+    padding: 10px;
+    width: 800px;
+    height: 600px;
+    box-shadow: 3px 5px 8px black;
+}
+
+p {
+    margin: 0;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The littlest bookshop!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initShop()">
+
+    <section class="shop">
+        <div class="book-adder">
+            <input type="text" name="bookName" placeholder="Book Name">
+            <input type="text" name="price" placeholder="Price">
+            <button class="add-btn" onclick="onAddBook()">Add book</button>
+        </div>
+        <section class="container">
+            <table>
+                <tbody class="book-table">
+
+                </tbody>
+            </table>
+        </section>
+        <nav class="navigator">
+            <button class="page-nav-btn" onclick="onChangePage(-1)">&laquo; Previous Page</button>
+            <span class="curr-page-num">1</span>
+            <button class="page-nav-btn" onclick="onChangePage(1)">Next Page &raquo;</button>
+        </nav>
+
+        <div class="hidden-details">
+
+        </div>
+    </section>
+
+    <script src="js/services/util-texts.js"></script>
+    <script src="js/services/storage-service.js"></script>
+    <script src="js/services/book-service.js"></script>
+    <script src="js/services/util-service.js"></script>
+    <script src="js/page-controller.js"></script>
+</body>
+
+</html>

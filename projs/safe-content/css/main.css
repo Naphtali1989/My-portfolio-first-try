@@ -1,0 +1,76 @@
+@font-face {
+    font-family: spacey;
+    src: url(../fonts/SpaceMono-BoldItalic.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../imgs/trekybcg.jpg') center no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    font-family: spacey, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+button {
+    /* cursor: url(../imgs/stcursor.png), auto; */
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.the-whole-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.secret-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(0, 128, 0, 0.349);
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+
+input,
+.btn {
+    padding: 5px 10px;
+    font-size: 30px;
+}
+
+.log-out-btn {
+    margin: 25px;
+}
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.secret {
+    display: flex;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.hide {
+    transform: scale(0);
+    display: none;
+}
