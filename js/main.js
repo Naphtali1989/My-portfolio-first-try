@@ -11,13 +11,13 @@ function renderPortItem() {
     var currCount = 0;
     var strHTML = items.map(function(item) {
         return `<div class="col-md-4 col-sm-6 portfolio-item item${++currCount}">
-                    <a class="portfolio-link" data-toggle="modal" onclick="renderPortModal('${currCount}', '${item.id}')" href="#portfolioModal">
+                    <a class="portfolio-link" data-toggle="modal" onclick="renderPortModal('${item.id}')" href="#portfolioModal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/portfolio/0${currCount}-thumbnail.jpg" alt="">
+                        <img class="img-fluid" style="max-height: 135px;" src="img/portfolio/${item.imgUrl}-thumbnail.jpg" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>${item.title}</h4>
@@ -29,7 +29,7 @@ function renderPortItem() {
     elPortItems.innerHTML = strHTML.join('');
 }
 
-function renderPortModal(num, id) {
+function renderPortModal(id) {
     var item = getPortItemById(id);
     var strHTML = `
                 <div class="row">
@@ -38,7 +38,7 @@ function renderPortModal(num, id) {
                             <!-- Project Details Go Here -->
                                 <h2>${item.title}</h2>
                                 <p class="item-intro text-muted">${item.desc}</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/0${num}-full.jpg" alt="">
+                                <img class="img-fluid d-block mx-auto" src="img/portfolio/${item.imgUrl}-full.jpg" alt="">
                                 <p>${item.fullDesc}</p>
                                 <ul class="list-inline">
                                     <li>Date: september 2020</li>
