@@ -39,10 +39,10 @@ function renderPortModal(num, id) {
                                 <h2>${item.title}</h2>
                                 <p class="item-intro text-muted">${item.desc}</p>
                                 <img class="img-fluid d-block mx-auto" src="img/portfolio/0${num}-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-                                maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>${item.fullDesc}</p>
                                 <ul class="list-inline">
                                     <li>Date: september 2020</li>
+                                    <li>link: ${item.url}</li>
                                     <li>Category: ${item.category}</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
